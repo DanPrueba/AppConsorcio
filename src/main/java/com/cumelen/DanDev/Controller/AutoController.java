@@ -23,8 +23,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("autos")
-@CrossOrigin(origins = "http://localhost:4200/")
-//@CrossOrigin(origins = "https://cumelen-vla.web.app/")
+//@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "https://cumelen-vla.web.app/")
 
 public class AutoController {
     
