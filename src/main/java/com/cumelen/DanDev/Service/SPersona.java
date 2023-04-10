@@ -6,6 +6,7 @@ import com.cumelen.DanDev.Entity.Persona;
 import com.cumelen.DanDev.Repository.IAutoRepository;
 import com.cumelen.DanDev.Repository.IPersonaRepository;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class SPersona {
     public Persona traerPersona(int id){
         return iPersonaRepository.findById(id).orElse(null);
     }
-    
+            
     public void guardarPersona(Persona persona){
         iPersonaRepository.save(persona);
     }
